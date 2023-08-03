@@ -43,6 +43,10 @@ class Registrasi extends Migration
                 'type' => 'VARCHAR',
                 'constraint' => '10',
             ],
+            'jurusan' => [
+                'type' => 'VARCHAR',
+                'constraint' => '50',
+            ],
             'hobi' => [
                 'type' => 'VARCHAR',
                 'constraint' => '100',

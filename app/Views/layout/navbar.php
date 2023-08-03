@@ -1,27 +1,18 @@
-<nav class="navbar navbar-expand-lg bg-warning">
-        <div class="container">
-            <a class="navbar-brand" href="<?= base_url() ?>">
-                <img src="<?= base_url('img') ?>/nusan.png" alt="" width="80" height="60">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto fw-semibold">
-                    <li class="nav-item">
-                        <a class="nav-link" href="<?= base_url() ?>">Beranda</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="<?= base_url('jadwal') ?>">Jadwal Latihan</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="<?= base_url('tentang-kami') ?>">Tentang Kami</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="<?= base_url('daftar') ?>">Daftar</a>
-                    </li>
-                </ul>
-            </div>
+<!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0">
+    <a class="navbar-brand" href="<?= base_url() ?>">
+        <img src="<?= base_url('img') ?>/nusan.png" alt="" width="120" height="80">
+    </a>
+    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto py-3 py-lg-0">
+            <a href="<?= base_url() ?>" class="nav-item nav-link">Home</a>
+            <a href="<?= base_url('jadwal') ?>" class="nav-item nav-link">Schedule</a>
+            <a href="<?= base_url('tentang-kami') ?>" class="nav-item nav-link">About Us</a>
+            <a href="<?= base_url('daftar') ?>" class="nav-item nav-link">Register</a>
         </div>
-    </nav>
+    </div>
+</nav>
+<!-- Navbar End -->

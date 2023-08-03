@@ -97,7 +97,7 @@ class Registrasi extends BaseController
             $pdfFileName = 'form_pendaftaran_' . date('Ymd_His') . '.pdf';
             file_put_contents(ROOTPATH . 'public/pdf_folder/' . $pdfFileName, $output); // Ganti 'pdf_folder' dengan lokasi folder di server Anda tempat menyimpan file PDF
 
-            session()->setFlashdata('success', 'Data berhasil disimpan.');
+            // session()->setFlashdata('success', 'Data berhasil disimpan.');
             // Setelah menyimpan PDF, redirect user kembali ke halaman form dengan pesan sukses dan link untuk mengunduh file PDF yang telah dibuat.
             return redirect()->to('/daftar')->with('success', 'Data berhasil disimpan. Silakan download salinan PDF Anda: <a href="' . base_url('pdf_folder/' . $pdfFileName) . '">Download</a>');
             // return redirect()->to('/daftar');

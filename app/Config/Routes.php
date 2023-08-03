@@ -49,15 +49,15 @@ $routes->add('daftar', 'Registrasi::create');
     // $routes->post('update', 'Registrasi::update');
 //     $routes->get('delete/(:num)', 'Registrasi::delete/$1');
 // });
-$routes->add('admin/logout', 'Admin/User::logout');
+$routes->add('admin/logout', 'Admin\User::logout');
 
 $routes->group('admin', ['filter' => 'noauth'], function ($routes) {
-    $routes->add('', 'Admin/User::login');
-    $routes->add('login', 'Admin/User::login');
+    $routes->add('', 'Admin\User::login');
+    $routes->add('login', 'Admin\User::login');
 });
 
 $routes->group('admin', ['filter' => 'auth'], function ($routes) {
-    $routes->add('sukses', 'Admin/User::sukses');
+    $routes->add('sukses', 'Admin\User::sukses');
 
     $routes->add('dashboard', 'Registrasi::index');
     $routes->add('data', 'Registrasi::data');

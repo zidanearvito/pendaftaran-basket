@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 
+use Dompdf\Dompdf;
 use App\Controllers\BaseController;
 use App\Models\RegistrasiModel;
 
@@ -64,9 +65,42 @@ class Registrasi extends BaseController
                 'kode_pendaftaran' => $kode,
             ]);
 
-            session()->setFlashdata('success', 'Data berhasil disimpan.');
+            $data = [
+                'nis' => $nis,
+                'nama_siswa' => $this->request->getPost('nama_siswa'),
+                'jenis_kelamin' => $this->request->getPost('jenis_kelamin'),
+                'umur' => $this->request->getPost('umur'),
+                'agama' => $this->request->getPost('agama'),
+                'alamat' => $this->request->getPost('alamat'),
+                'kelas' => $this->request->getPost('kelas'),
+                'jurusan' => $this->request->getPost('jurusan'),
+                'hobi' => $this->request->getPost('hobi'),
+                'tinggi_badan' => $this->request->getPost('tinggi_badan'),
+                'berat_badan' => $this->request->getPost('berat_badan'),
+                'alasan_basket' => $this->request->getPost('alasan_basket'),
+                'kode_pendaftaran' => $kode,
+            ];
 
-            return redirect()->to('/daftar');
+            // Generate file PDF dan simpan ke folder
+            $html = view('pdf_template', $data); // Ganti 'pdf_template' dengan nama view template PDF Anda
+
+            // Instansiasi objek Dompdf
+            $dompdf = new \Dompdf\Dompdf();
+
+            // Convert view menjadi PDF
+            $dompdf->loadHtml($html);
+            $dompdf->setPaper('A4', 'portrait');
+            $dompdf->render();
+
+            // Generate PDF dan simpan ke server
+            $output = $dompdf->output();
+            $pdfFileName = 'form_pendaftaran_' . date('Ymd_His') . '.pdf';
+            file_put_contents(ROOTPATH . 'public/pdf_folder/' . $pdfFileName, $output); // Ganti 'pdf_folder' dengan lokasi folder di server Anda tempat menyimpan file PDF
+
+            session()->setFlashdata('success', 'Data berhasil disimpan.');
+            // Setelah menyimpan PDF, redirect user kembali ke halaman form dengan pesan sukses dan link untuk mengunduh file PDF yang telah dibuat.
+            return redirect()->to('/daftar')->with('success', 'Data berhasil disimpan. Silakan download salinan PDF Anda: <a href="' . base_url('pdf_folder/' . $pdfFileName) . '">Download</a>');
+            // return redirect()->to('/daftar');
         }
         return view('/daftar');
     }

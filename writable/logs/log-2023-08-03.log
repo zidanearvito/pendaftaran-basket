@@ -1,0 +1,421 @@
+INFO - 2023-08-03 06:35:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 06:51:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-03 06:51:37 --> Undefined variable: data
+in APPPATH\Controllers\Registrasi.php on line 69.
+ 1 APPPATH\Controllers\Registrasi.php(69): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data', 'D:\\VITO\\KKP\\kkp-radhya\\app\\Controllers\\Registrasi.php', 69, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Registrasi->create()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registrasi))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\VITO\\KKP\\kkp-radhya\\public\\index.php')
+INFO - 2023-08-03 06:55:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 06:55:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 06:55:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 06:56:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-03 06:56:14 --> file_put_contents(D:\VITO\KKP\kkp-radhya\public/pdf_folder/form_pendaftaran_20230803_065614.pdf): failed to open stream: No such file or directory
+in APPPATH\Controllers\Registrasi.php on line 98.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_put_contents(D:\\VITO\\KKP\\kkp-radhya\\public/pdf_folder/form_pendaftaran_20230803_065614.pdf): failed to open stream: No such file or directory', 'D:\\VITO\\KKP\\kkp-radhya\\app\\Controllers\\Registrasi.php', 98, [...])
+ 2 APPPATH\Controllers\Registrasi.php(98): file_put_contents('D:\\VITO\\KKP\\kkp-radhya\\public/pdf_folder/form_pendaftaran_20230803_065614.pdf', '%PDF-1.7
+1 0 obj
+<< /Type /Catalog
+/Outlines 2 0 R
+/Pages 3 0 R >>
+endobj
+2 0 obj
+<< /Type /Outlines /Count 0 >>
+endobj
+3 0 obj
+<< /Type /Pages
+/Kids [6 0 R
+]
+/Count 1
+/Resources <<
+/ProcSet 4 0 R
+/Font << 
+/F1 8 0 R
+/F2 9 0 R
+/F3 10 0 R
+/F4 11 0 R
+/F5 18 0 R
+>>
+/ExtGState << 
+/GS1 19 0 R
+/GS2 20 0 R
+>>
+>>
+/MediaBox [0.000 0.000 595.280 841.890]
+ >>
+endobj
+4 0 obj
+[/PDF /Text ]
+endobj
+5 0 obj
+<<
+/Producer (şÿ' . "\0" . 'd' . "\0" . 'o' . "\0" . 'm' . "\0" . 'p' . "\0" . 'd' . "\0" . 'f' . "\0" . ' ' . "\0" . '2' . "\0" . '.' . "\0" . '0' . "\0" . '.' . "\0" . '3' . "\0" . ' ' . "\0" . '+' . "\0" . ' ' . "\0" . 'C' . "\0" . 'P' . "\0" . 'D' . "\0" . 'F)
+/CreationDate (D:20230803065614+00\'00\')
+/ModDate (D:20230803065614+00\'00\')
+/Title (şÿ' . "\0" . 'B' . "\0" . 'o' . "\0" . 'o' . "\0" . 't' . "\0" . 's' . "\0" . 't' . "\0" . 'r' . "\0" . 'a' . "\0" . 'p' . "\0" . ' ' . "\0" . 'd' . "\0" . 'e' . "\0" . 'm' . "\0" . 'o)
+>>
+endobj
+6 0 obj
+<< /Type /Page
+/MediaBox [0.000 0.000 595.280 841.890]
+/Parent 3 0 R
+/Annots [ 16 0 R 22 0 R 24 0 R 26 0 R 28 0 R ]
+/Contents 7 0 R
+>>
+endobj
+7 0 obj
+<< /Filter /FlateDecode
+/Length 1913 >>
+stream
+xœ¥YÉn7½ÏWğ 1 šûr´’Ø±q¤ Ã‡5O¬ÙZ`ø“òù¶¼b“½Ìt÷ôH0ÔR±«ŠÅªWÛ‹/&xÔO!DóôB3m¸y/yğ†}Ø,˜ì1Ñó¤»äLúN±Çx»ZHö•	v†Ÿ_æ±˜ô²}şñjñüÕ¹d«»…ä¶Ã¬’ÉóÌ	.ë_–´.ç‹·I›KzÚç¨6Ã•Ìp­5Û,lä$~}}¼:X"œb:©Ù@»pšÌ#“kuô¯6·û„C P‘ÂÓ‹ "wˆÇÅ%{şR²À»¸bìİ÷¯7ÕjÉ¶7÷ìêæa{ÉnnÙı·ÏKö°ı´½ùºıá=»8c?_ì8>Ôû@ìÇ;ë—ªÙ€M¨ÀÙá„|æwŒ½Ç—‹¢ÒE®¢a}oášã€ÌñG˜CšI $šk(0É¥&c‚]Ğ·»§ M!Ê¤É›˜ãX?¡iäû‹Po=÷6Åá8¤]•22[œ#R:ìl‘ÈÁ…u`WiÁÍ@*å ÏZ@£%Án¹ì¾Çñƒh¥—±§»
+Õî®¹íÚVÈÚøÄ^”¬‘FúvÉU°Ä^vGŒ¢cmp~×öšLGUİ÷åäYºx¦Ñ^<—wo=lë;ş»bw£™à2luäÌûĞ;]ŞVÛËêè|h;…_Šºd–•Ñ„˜D“
+@ºî¢IÅTcŠO@:)ŸŒ1tĞ¤×Á7hé ¯D$“-šÊûÏ"ãİjÏx(»g´Û
+Yß¢IyiĞÒÈv”;hRXš@ší™lÑTŞç“éâ™F{ñ\\Ş½ø5ÛÖwü<4)Ë˜÷ÑtV]~­®Ù¯Õıúc5U§§A¥wÔ¯˜Ô¾U^y¨$ßV‚ğ¨¤åÚšÆu ‘]PIÇ¥–¨@jè+Édªò>‡µHç°·Ú3,Êî4Å¶–Tµö²€r-B*dt£UÁë¨° ƒi@Rvm¯ÉTå}9y–.i´Ïåİ‹_³m}ÇÏ•Äôæ}P],·÷ÕvÅŞT›õ£!%Z§OÒ2ÍÊã %hEv!…ke)4ZCã8&¸¤¨£?·¸úJX2ÙBª¼ÏA-Ò9è­öŠ²{†L±­%E­½^pİÁª)¢ÑN¤•¾…-H
+¤Æ›ØÚ^ÈRÍûúätí™öÚsÍîµ_ÛúŸ)±%˜÷!õSuu_İ>LÃ T}üáPDËÂÔ˜g^‡¶]¶I3e›^ŞÜnØa9ÌÊ”zûgù­ÚTì×åvõ©úÌuE%*sbB¶<e¾u´O<•D @b4iÂãGOè²Ú&]Îèò³†ÏÖ6Ú•¼>ïŸÜ¡laq	6àbëÆp¿Y^Wwı<&…ÔmÇd¸r!É£‰C¾xVF”_U\\»ïEO×&±€Y°8QÜ)UíÅ/Äd#éFŠE›˜ÒŞ»Z÷_l;êl	“ÊSİƒœü¾¾^dÉ)\'\'=À™x@¸çwœ”TˆÙìèœ¸|Îa¼G)¡¹#ó0ûhãÉkoœïÂyØ+ŠRˆJ(ö2Ô{4Üë½¿û¯ÙüíA$ãà>%díÚ³‡Û‡»j»“Í‚æ„)áCÙŒ3„¤' . "\0" . 'm9êÌÍMg´kES¥FH\\NĞ––£„¢¤a$I£”ú5ˆÅì°4Rù÷aB¼/…Ö"¥™Ï®Ñ˜Ä|v¦ÎÒg‡ã¤RóÙÉ˜yGNĞ*a@–jÆ©;·w4R†tÕ~bjàú8<ş¹y¸İ©Á”‹jBd°ÊÓt†*öÙr»¾Kem³ŞÍ=4-mÌ„ğ¡ÜÃ’ÛñX½Ÿ{˜¬è+¢¤ÜX .MârúØ6 !%HZa\\vS} ç¶~*øÜ{1¡¤b€0åûöaÓ× mĞ+ğ–<ÎŠ›&eÒÓPl0*=T£_¬h\\ëÃÁ`<.s' . "\0" . '[U2É£=ê\'–uè²èŒ¥SŠ±ª¦¨Tb2áØ¢z>’Õ6Ê©š<µSÑ©†QáşÀ€À§a&»Ï·¦¹ì0F›ùì¾Î…™ì4R.Ìe‡1fŞQ‡SNPP««Å©ƒÀà€öÖâ©ÀxÜËãP5ÿåæïõÎ˜ïˆÂëïêÆc0‚üS®7¾ş°nÆ"$ãñ·lK3tY½XoW«5;­.÷GB”vÜÈÇe‡: Á”›}¾ŞH¥)o\\tp#m1¨}u~fM‡GÛE=Çá²¬LdFtã³
+ˆQ(tDYº‰‰t‹/ÌÊ¹ÄdékÊ~ú‘Xo^×°ƒ`ÕHê0x³Æ	i‚?­î>-g”>MQm<èL –ÓCåÄôéÁDßdÆO?P)Š±˜Pê™Æ%Ó»Çu›b+}^À%VQuï6›QÿSe\'#V”»Ñ)Š>G¹!ÿxóùÛízõñı‹q]é"ü?tIg
+endstream
+endobj
+8 0 obj
+<< /Type /Font
+/Subtype /Type1
+/Name /F1
+/BaseFont /Times-Roman
+/Encoding /WinAnsiEncoding
+>>
+endobj
+9 0 obj
+<< /Type /Font
+/Subtype /Type1
+/Name /F2
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+>>
+endobj
+10 0 obj
+<< /Type /Font
+/Subtype /Type1
+/Name /F3
+/BaseFont /Times-Bold
+/Encoding /WinAnsiEncoding
+>>
+endobj
+11 0 obj
+<</Type /Font
+/Subtype /Type0
+/BaseFont /SUBAAE+DejaVuSans
+/Encoding /Identity-H
+/DescendantFonts [13 0 R]
+/ToUnicode 12 0 R
+>>
+endobj
+12 0 obj
+<</Length 345 >>
+stream
+/CIDInit /ProcSet findresource begin
+12 dict begin
+begincmap
+/CIDSystemInfo
+<</Registry (Adobe)
+/Ordering (UCS)
+/Supplement 0
+>> def
+/CMapName /Adobe-Identity-UCS def
+/CMapType 2 def
+1 begincodespacerange
+<0000> <FFFF>
+endcodespacerange
+1 beginbfrange
+<0000> <FFFF> <0000>
+endbfrange
+endcmap
+CMapName currentdict /CMap defineresource pop
+end
+end
+endstream
+endobj
+13 0 obj
+<</Type /Font
+/Subtype /CIDFontType2
+/BaseFont /SUBAAE+DejaVuSans
+/CIDSystemInfo 14 0 R
+/FontDescriptor 43 0 R
+/DW 500
+/W [32 [318] 9662 [502] 65533 [1025] ]
+/CIDToGIDMap 15 0 R
+>>
+endobj
+14 0 obj
+<</Registry (Adobe)
+/Ordering (UCS)
+/Supplement 0
+>>
+endobj
+15 0 obj
+<<
+/Filter /FlateDecode
+/Length 164>>
+stream
+xœíÎA' . "\0" . '0Ä°j+ÌqÒº‡ JUè¤' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . 'xän' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '' . "\0" . '|­˜' . "\0" . '
+
+endstream
+endobj
+16 0 obj
+<< /Type /Annot
+/Subtype /Link
+/A 17 0 R
+/Border [0 0 0]
+/H /I
+/Rect [ 34.0157 758.3743 94.0157 803.3743 ]
+>>
+endobj
+17 0 obj
+<< /Type /Action
+/S /URI
+/URI (http://localhost:8080/)
+>>
+endobj
+18 0 obj
+<< /Type /Font
+/Subtype /Type1
+/Name /F5
+/BaseFont /Times-Roman
+/Encoding /WinAnsiEncoding
+>>
+endobj
+19 0 obj
+<< /Type /ExtGState
+/BM /Normal
+/ca 0
+>>
+endobj
+20 0 obj
+<< /Type /ExtGState
+/BM /Normal
+/ca 1
+>>
+endobj
+21 0 obj
+[6 0 R /Fit]
+endobj
+22 0 obj
+<< /Type /Annot
+/Subtype /Link
+/A 23 0 R
+/Border [0 0 0]
+/H /I
+/Rect [ 64.0157 737.2015 103.9997 749.0815 ]
+>>
+endobj
+23 0 obj
+<< /Type /Action
+/S /URI
+/URI (http://localhost:8080/)
+>>
+endobj
+24 0 obj
+<< /Type /Annot
+/Subtype /Link
+/A 25 0 R
+/Border [0 0 0]
+/H /I
+/Rect [ 64.0157 722.9455 136.9997 734.8255 ]
+>>
+endobj
+25 0 obj
+<< /Type /Action
+/S /URI
+/URI (http://localhost:8080/jadwal)
+>>
+endobj
+26 0 obj
+<< /Type /Annot
+/Subtype /Link
+/A 27 0 R
+/Border [0 0 0]
+/H /I
+/Rect [ 64.0157 708.6895 133.0037 720.5695 ]
+>>
+endobj
+27 0 obj
+<< /Type /Action
+/S /URI
+/URI (http://localhost:8080/tentang-kami)
+>>
+endobj
+28 0 obj
+<< /Type /Annot
+/Subtype /Link
+/A 29 0 R
+/Border [0 0 0]
+/H /I
+/Rect [ 64.0157 694.4335 94.6637 706.3135 ]
+>>
+endobj
+29 0 obj
+<< /Type /Action
+/S /URI
+/URI (http://localhost:8080/daftar)
+>>
+endobj
+30 0 obj
+[6 0 R /Fit]
+endobj
+31 0 obj
+[6 0 R /Fit]
+endobj
+32 0 obj
+[6 0 R /Fit]
+endobj
+33 0 obj
+[6 0 R /Fit]
+endobj
+34 0 obj
+[6 0 R /Fit]
+endobj
+35 0 obj
+[6 0 R /Fit]
+endobj
+36 0 obj
+[6 0 R /Fit]
+endobj
+37 0 obj
+[6 0 R /Fit]
+endobj
+38 0 obj
+[6 0 R /Fit]
+endobj
+39 0 obj
+[6 0 R /Fit]
+endobj
+40 0 obj
+[6 0 R /Fit]
+endobj
+41 0 obj
+[6 0 R /Fit]
+endobj
+42 0 obj
+[6 0 R /Fit]
+endobj
+43 0 obj
+<< /Type /FontDescriptor
+/Flags 32
+/FontName /SUBAAE+DejaVuSans
+/StemV 70
+/Ascent 928
+/CapHeight 928
+/Descent -236
+/FontBBox [-1021 -463 1793 1232]
+/ItalicAngle 0
+/FontFile2 44 0 R
+>>
+endobj
+44 0 obj
+<< /Filter /FlateDecode
+/Length1 1274
+/Length 817 >>
+stream
+xœ•S]LW=wæîÌ‚tØİRŒ¸(´¥E–MŒ¢€‰	Á?‚²iaÙeµììÖ"M4Ú—Fy 5!_LŸì‹‰Æ·¶/•h¢&&cÒğb“V¢ÃLÏ\\±±I;7ß½ç|÷û93÷€bNí©„5Œ…¯^Ğó­5E>ø~Œø	­&¶r¨}˜„AŞ“JÆQ>u‘¼—<˜¶Æsã§ÈSä‘‘Ñ3IÈàù·äó£Ù¸h´yEÆJ\'ĞğËuòIrÙ|îùÅLzùlmÂÑørOO<­ÚÀßgÿZ|íÎ?±Ñï¹{»Ş~³¾¼gwú‹‘z›bÉÌ´³8/ï½:èWŞÕOEéÊ_Â/Ñª²ı”Dµ7İE×}‹Ü\'º`®ÊÖ˜)W—“¿"©6.KşfT©Ú>½õH±‡†u˜ñÊæ*éI:Ó2é»Êj&*ÛKäk¯…ßwN“Øzgn~ÖÍÍÏÍ7–—V—ÖV—V\'%ì¼¾Ş~æL›…?ÆŒ:ö0ÖYæ)/¯†¾àHYf{êtT¹½ş°Ù­êÉP´å“–æÖ6İ‚SKóÇ›7fh—ˆ6…CAc­ˆBVê¶-m©Oÿl†¿üÃ†cŸoªy|cäÖ€õãÑo¢;b±íf·
+±¯9Îå¯›w†>ªÜXßkïê¾r{ûŸ:öeú·´ô÷]HÌ®|¦ÎU6èİš‰˜w²ˆÒ¨T{X L¶„5øÅ¾e¬Óß³Œ%ñğ2ö¡BL,cAñ:Eg0†á	Á§ˆ£k9¢DCŒˆ`/c
+ÈÓÆ€…4èİã·íÁ(G‡WjåKpM0ç4çaFÿ‡®­+]{Ùé4{dN†Ñ‹9ÿ¯c\'ÑIæõáKFÄk©j	•a©7Š°J†s1C¬{‚qægÙİR{ÿ¬sDUÉSQ–ã‹Ù}¿·O)Ì³nVum¢Î(ÚŞ‰~«/]÷,oÁû!bÊû[}QßiÕÒªßGR+ãÿ¶ÆĞu¿Ô4ù÷7,ºÅ5ƒu‘’ƒÉ®a´#âºFĞ	ŠY3-şª¡êi
+endstream
+endobj
+xref
+0 45
+0000000000 65535 f 
+0000000009 00000 n 
+0000000074 00000 n 
+0000000120 00000 n 
+0000000359 00000 n 
+0000000388 00000 n 
+0000000577 00000 n 
+0000000727 00000 n 
+0000002713 00000 n 
+0000002822 00000 n 
+0000002929 00000 n 
+0000003038 00000 n 
+0000003182 00000 n 
+0000003578 00000 n 
+0000003775 00000 n 
+0000003844 00000 n 
+0000004080 00000 n 
+0000004206 00000 n 
+0000004280 00000 n 
+0000004390 00000 n 
+0000004447 00000 n 
+0000004504 00000 n 
+0000004533 00000 n 
+0000004660 00000 n 
+0000004734 00000 n 
+0000004861 00000 n 
+0000004941 00000 n 
+0000005068 00000 n 
+0000005154 00000 n 
+0000005280 00000 n 
+0000005360 00000 n 
+0000005389 00000 n 
+0000005418 00000 n 
+0000005447 00000 n 
+0000005476 00000 n 
+0000005505 00000 n 
+0000005534 00000 n 
+0000005563 00000 n 
+0000005592 00000 n 
+0000005621 00000 n 
+0000005650 00000 n 
+0000005679 00000 n 
+0000005708 00000 n 
+0000005737 00000 n 
+0000005937 00000 n 
+trailer
+<<
+/Size 45
+/Root 1 0 R
+/Info 5 0 R
+/ID[<23a3c4ae2871e7dc56a73c0c3c74d943><23a3c4ae2871e7dc56a73c0c3c74d943>]
+>>
+startxref
+6841
+%%EOF
+')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Registrasi->create()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registrasi))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\VITO\\KKP\\kkp-radhya\\public\\index.php')
+CRITICAL - 2023-08-03 06:56:21 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 255856640 bytes)
+ã€Previous Exceptionã€‘
+ErrorException
+file_put_contents(D:\VITO\KKP\kkp-radhya\public/pdf_folder/form_pendaftaran_20230803_065614.pdf): failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_put_conten...', 'D:\\VITO\\KKP\\kkp...', 98, Array)
+#1 D:\VITO\KKP\kkp-radhya\app\Controllers\Registrasi.php(98): file_put_contents('D:\\VITO\\KKP\\kkp...', '%PDF-1.7\n1 0 ob...')
+#2 D:\VITO\KKP\kkp-radhya\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Registrasi->create()
+#3 D:\VITO\KKP\kkp-radhya\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registrasi))
+#4 D:\VITO\KKP\kkp-radhya\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\VITO\KKP\kkp-radhya\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#6 D:\VITO\KKP\kkp-radhya\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\VITO\\KKP\\kkp...')
+#7 {main}
+in APPPATH\Views\errors\html\error_exception.php on line 101.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2023-08-03 06:56:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 06:57:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 06:57:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 07:00:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 07:00:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 07:01:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 07:01:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 07:03:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 07:03:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 07:05:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 07:05:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 07:12:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 07:12:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 07:14:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 07:14:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 07:18:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 07:18:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 07:18:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 07:20:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 07:21:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-03 07:21:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

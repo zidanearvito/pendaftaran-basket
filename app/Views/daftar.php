@@ -4,9 +4,12 @@
 
 <!-- form template -->
 <div class="container pt-3 pb-5">
-    <div class="text-center">
-        <h1 class="">Form Daftar</h1>
+    <div class="wow fadeInUp py-4" data-wow-delay="0.1s">
+        <div class="border-start border-5 border-primary ps-4">
+            <h1 class="display-6 mb-0">Register</h1>
+        </div>
     </div>
+
     <div class="row ">
         <div class="col-lg-7 mx-auto">
             <div class="card mt-2 mx-auto p-4 bg-light">
@@ -133,7 +136,7 @@
 
                                     <div class="col-md-12">
 
-                                        <input type="submit" class="btn btn-success btn-send pt-2 btn-block
+                                        <input type="submit" class="btn btn-warning btn-send pt-2 btn-block
                             " value="Daftar">
 
                                     </div>

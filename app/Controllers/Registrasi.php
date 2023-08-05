@@ -105,38 +105,20 @@ class Registrasi extends BaseController
         return view('/daftar');
     }
 
-
-    // public function edit($id = null)
+    // public function detail($id = null)
     // {
     //     $model = new RegistrasiModel();
-    //     $data['registrasi'] = $model->where('id', $id)->first();
-    //     return view('registrasi/edit', $data);
+    //     $model->find($id);
+    //     // return redirect()->to('/admin/details');
+    //     return view('/admin/detail_pendaftar');
     // }
 
-    // public function update()
-    // {
-    //     helper(['form', 'url']);
-    //     $model = new RegistrasiModel();
-
-    //     $id = $this->request->getPost('id');
-
-    //     $data = [
-    //         'nis' => $this->request->getPost('nis'),
-    //         'nama_siswa'  => $this->request->getPost('nama_siswa'),
-    //         'jenis_kelamin' => $this->request->getPost('jenis_kelamin'),
-    //         'umur' => $this->request->getPost('umur'),
-    //         'agama' => $this->request->getPost('agama'),
-    //         'alamat' => $this->request->getPost('alamat'),
-    //         'kelas' => $this->request->getPost('kelas'),
-    //         'hobi' => $this->request->getPost('hobi'),
-    //         'tinggi_badan' => $this->request->getPost('tinggi_badan'),
-    //         'berat_badan' => $this->request->getPost('berat_badan'),
-    //         'alasan_basket' => $this->request->getPost('alasan_basket'),
-    //     ];
-
-    //     $model->update($id, $data);
-    //     return redirect()->to('admin/');
-    // }
+    public function detail($id = null)
+    {
+        $model = new RegistrasiModel();
+        $data['registrasi'] = $model->find($id); // Mengambil data registrasi dari basis data berdasarkan ID
+        return view('admin/detail_pendaftar', $data);
+    }
 
     public function delete($id = null)
     {

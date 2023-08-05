@@ -34,7 +34,7 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 // route utama
 $routes->get('/', 'Home::index');
-$routes->get('jadwal', 'Jadwal::index');
+$routes->get('jadwal', 'Jadwal::data');
 $routes->get('tentang-kami', 'Home::tentang');
 $routes->add('daftar', 'Registrasi::create');
 
@@ -61,9 +61,12 @@ $routes->group('admin', ['filter' => 'auth'], function ($routes) {
 
     $routes->add('dashboard', 'Registrasi::index');
     $routes->add('data', 'Registrasi::data');
+    $routes->add('detail/(:num)', 'Registrasi::detail/$1');
     $routes->add('delete/(:num)', 'Registrasi::delete/$1');
 
-    $routes->add('jadwal', 'Jadwal::create');
+    $routes->add('jadwal', 'Jadwal::index');
+    $routes->add('jadwal/add', 'Jadwal::create');
+    $routes->add('jadwal/update(:num)', 'Jadwal::update/$1');
 });
 
 

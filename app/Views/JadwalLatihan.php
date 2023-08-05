@@ -4,35 +4,27 @@
 <!-- app/Views/jadwal/index.php -->
 <div class="container">
     <div class="row">
+        <div class="wow fadeInUp py-4" data-wow-delay="0.1s">
+            <div class="border-start border-5 border-primary ps-4">
+                <h1 class="display-6 mb-0">Schedule</h1>
+            </div>
+        </div>
         <div class="col-lg-12">
-            <h1 class="text-center">Jadwal Latihan</h1>
-            <table border="1">
-                <tr>
-                    <th>ID</th>
-                    <th>Judul</th>
-                    <th>Foto</th>
-                    <th>Deskripsi</th>
-                    <th>Aksi</th>
-                </tr>
-                <?php foreach ($jadwal as $item) : ?>
-                    <tr>
-                        <td><?= $item['id'] ?></td>
-                        <td><?= $item['judul'] ?></td>
-                        <td>
-                            <?php if (!empty($item['foto'])) : ?>
-                                <img src="<?= base_url('public/uploads/' . $item['foto']) ?>" width="100" alt="<?= $item['judul'] ?>">
-                            <?php endif ?>
-                        </td>
-                        <td><?= $item['deskripsi'] ?></td>
-                        <td>
-                            <a href="<?= base_url('jadwal/edit/' . $item['id']) ?>">Edit</a>
-                            <a href="<?= base_url('jadwal/delete/' . $item['id']) ?>" onclick="return confirm('Apakah Anda yakin ingin menghapus jadwal ini?')">Hapus</a>
-                        </td>
-                    </tr>
-                <?php endforeach ?>
-            </table>
+            <?php foreach ($jadwal as $item) : ?>
+                <div class="d-flex justify-content-between">
+                    <p class="card-text"> </p>
+                    <p class="card-text small">updated at : <?= $item['created_at'] ?> </p>
+                </div>
+                <img src="<?= base_url('uploads/' . $item['foto']) ?>" alt="Foto Jadwal" width="1200px" class="pt-3">
+                <div class="card-body offset-2">
+                    <hr style="width: 800px;">
+                    <h2 class="card-title m-0"> <?= $item['judul'] ?> </h2>
+                    <p class="card-text "><?= $item['deskripsi'] ?> </p>
+                </div>
+            <?php endforeach ?>
         </div>
     </div>
+</div>
 </div>
 
 

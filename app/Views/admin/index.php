@@ -59,11 +59,18 @@
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
 
-            <!-- Item Data pendaftar -->
+            <!-- Item jadwal -->
             <li class="nav-item">
-                <a class="nav-link" href="#">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Feedback</span></a>
+                    <span>Schedule</span></a>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="<?= site_url('/admin/jadwal/add') ?>">Add New Schedule</a>
+                        <a class="collapse-item" href="<?= site_url('/admin/jadwal') ?>">Schedule</a>
+                    </div>
+                </div>
             </li>
 
             <!-- Sidebar Toggler (Sidebar) -->

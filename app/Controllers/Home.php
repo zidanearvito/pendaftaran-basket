@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 
+use App\Models\JadwalModel;
 use App\Controllers\BaseController;
 class Home extends BaseController
 {
@@ -10,10 +11,12 @@ class Home extends BaseController
         return view('home');
     }
 
-    public function jadwal()
-    {
-        return view('JadwalLatihan');
-    }
+    // public function jadwal()
+    // {
+    //     $model = new JadwalModel();
+    //     $data['jadwal'] = $model->findAll();
+    //     return view('JadwalLatihan', $data);
+    // }
 
     public function tentang()
     {

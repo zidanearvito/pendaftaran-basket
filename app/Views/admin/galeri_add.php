@@ -63,9 +63,10 @@
             <hr class="sidebar-divider my-0">
 
             <!-- Item jadwal -->
-            <li class="nav-item active">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                <i class="fas fa-fw fa-table"></i>
+            <li class="nav-item">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-table"></i>
                     <span>Schedule</span></a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
@@ -76,7 +77,7 @@
             </li>
 
             <!-- Item galeri -->
-            <li class="nav-item">
+            <li class="nav-item active">
             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseOne"
                     aria-expanded="true" aria-controls="collapseOne">
                     <i class="fas fa-fw fa-table"></i>
@@ -144,7 +145,7 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">Schedule</h1>
+                    <h1 class="h3 mb-2 text-gray-800">Gallery</h1>
                     <!-- <p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below.
                         For more information about DataTables, please visit the <a target="_blank" href="https://datatables.net">official DataTables documentation</a>.</p> -->
                     <div class="card o-hidden border-0 shadow-lg my-5">
@@ -155,24 +156,21 @@
                                     <div class="p-5">
                                         <form method="POST" enctype="multipart/form-data" action="">
                                             <div class="mb-3 row">
-                                                <label for="judul" class="col-sm-2 col-form-label">Schedule Name</label>
+                                                <label for="judul" class="col-sm-2 col-form-label">Photo's Name</label>
                                                 <div class="col-sm-10">
-                                                    <input type="text" class="form-control" name="judul" id="judul" value="<?= $jadwal['judul'] ?>">
+                                                    <input type="text" class="form-control" name="judul" id="judul">
                                                 </div>
                                             </div>
                                             <div class="mb-3 row">
-                                                <label for="foto" class="col-sm-2 col-form-label">Schedule Photo</label>
+                                                <label for="foto" class="col-sm-2 col-form-label">Photo</label>
                                                 <div class="col-sm-10">
                                                     <input type="file" class="form-control" name="foto" id="foto">
-                                                    <?php if (!empty($jadwal['foto'])) : ?>
-                                                        <img src="<?= base_url('uploads/' . $jadwal['foto']) ?>" alt="Foto Jadwal" width="150">
-                                                    <?php endif; ?>
                                                 </div>
                                             </div>
                                             <div class="mb-3 row">
                                                 <label for="deskripsi" class="col-sm-2 col-form-label">Description</label>
                                                 <div class="col-sm-10">
-                                                    <input type="text" class="form-control" name="deskripsi" id="deskripsi" value="<?= $jadwal['deskripsi'] ?>">
+                                                    <input type="text" class="form-control" name="deskripsi" id="deskripsi">
                                                 </div>
                                             </div>
                                             <div class="text-center">

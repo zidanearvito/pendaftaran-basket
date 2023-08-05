@@ -43,11 +43,11 @@
             <hr class="sidebar-divider my-0">
 
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item">
+            <!-- <li class="nav-item">
                 <a class="nav-link" href="<?= site_url('/admin') ?>">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
-            </li>
+            </li> -->
 
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
@@ -56,7 +56,7 @@
             <li class="nav-item">
                 <a class="nav-link" href="<?= site_url('/admin/data') ?>">
                     <i class="fas fa-fw fa-table"></i>
-                    <span>Data Pendaftar</span></a>
+                    <span>Registration</span></a>
             </li>
 
             <!-- Divider -->
@@ -66,12 +66,26 @@
             <li class="nav-item active">
             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <i class="fas fa-fw fa-table"></i>
                     <span>Schedule</span></a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item" href="<?= site_url('/admin/jadwal/add') ?>">Add New Schedule</a>
                         <a class="collapse-item" href="<?= site_url('/admin/jadwal') ?>">Schedule</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Item galeri -->
+            <li class="nav-item">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Gallery</span></a>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="<?= site_url('/admin/galeri/add') ?>">Add New Photo</a>
+                        <a class="collapse-item" href="<?= site_url('/admin/galeri') ?>">Gallery</a>
                     </div>
                 </div>
             </li>
@@ -131,7 +145,7 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">Jadwal Latihan</h1>
+                    <h1 class="h3 mb-2 text-gray-800">Schedule</h1>
                     <!-- <p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below.
                         For more information about DataTables, please visit the <a target="_blank" href="https://datatables.net">official DataTables documentation</a>.</p> -->
                     <div class="card o-hidden border-0 shadow-lg my-5">

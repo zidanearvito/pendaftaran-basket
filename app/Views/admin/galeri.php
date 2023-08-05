@@ -63,9 +63,9 @@
             <hr class="sidebar-divider my-0">
 
             <!-- Item jadwal -->
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                <i class="fas fa-fw fa-table"></i>
+                    <i class="fas fa-fw fa-table"></i>
                     <span>Schedule</span></a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
@@ -76,9 +76,8 @@
             </li>
 
             <!-- Item galeri -->
-            <li class="nav-item">
-            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseOne"
-                    aria-expanded="true" aria-controls="collapseOne">
+            <li class="nav-item active">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Gallery</span></a>
                 <div id="collapseOne" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
@@ -147,40 +146,41 @@
                     <h1 class="h3 mb-2 text-gray-800">Schedule</h1>
                     <!-- <p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below.
                         For more information about DataTables, please visit the <a target="_blank" href="https://datatables.net">official DataTables documentation</a>.</p> -->
-                    <div class="card o-hidden border-0 shadow-lg my-5">
-                        <div class="card-body p-0">
-                            <!-- Nested Row within Card Body -->
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="p-5">
-                                        <form method="POST" enctype="multipart/form-data" action="">
-                                            <div class="mb-3 row">
-                                                <label for="judul" class="col-sm-2 col-form-label">Schedule Name</label>
-                                                <div class="col-sm-10">
-                                                    <input type="text" class="form-control" name="judul" id="judul" value="<?= $jadwal['judul'] ?>">
-                                                </div>
-                                            </div>
-                                            <div class="mb-3 row">
-                                                <label for="foto" class="col-sm-2 col-form-label">Schedule Photo</label>
-                                                <div class="col-sm-10">
-                                                    <input type="file" class="form-control" name="foto" id="foto">
-                                                    <?php if (!empty($jadwal['foto'])) : ?>
-                                                        <img src="<?= base_url('uploads/' . $jadwal['foto']) ?>" alt="Foto Jadwal" width="150">
-                                                    <?php endif; ?>
-                                                </div>
-                                            </div>
-                                            <div class="mb-3 row">
-                                                <label for="deskripsi" class="col-sm-2 col-form-label">Description</label>
-                                                <div class="col-sm-10">
-                                                    <input type="text" class="form-control" name="deskripsi" id="deskripsi" value="<?= $jadwal['deskripsi'] ?>">
-                                                </div>
-                                            </div>
-                                            <div class="text-center">
-                                                <input type="submit" class="btn btn-dark" value="Save">
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
+
+                    <!-- Data Tables -->
+                    <div class="card shadow mb-4">
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered text-center" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>No</th>
+                                            <th>Photo's Name</th>
+                                            <th>Photo</th>
+                                            <th>Desc</th>
+                                            <th>Act</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <?php foreach ($galeri as $key => $item) : ?>
+                                            <tr>
+                                                <td><?= $key + 1 ?></td>
+                                                <td><?= $item['judul'] ?></td>
+                                                <td><img src="<?= base_url() ?>/uploads/gallery/<?= $item['foto'] ?>" alt="" width="100"></td>
+                                                <td><?= $item['deskripsi'] ?></td>
+                                                <td width="10%">
+                                                    <a class="btn btn-success" href="<?= site_url('galeri/update/' . $item['id']) ?>"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                                            <path d="M471.6 21.7c-21.9-21.9-57.3-21.9-79.2 0L362.3 51.7l97.9 97.9 30.1-30.1c21.9-21.9 21.9-57.3 0-79.2L471.6 21.7zm-299.2 220c-6.1 6.1-10.8 13.6-13.5 21.9l-29.6 88.8c-2.9 8.6-.6 18.1 5.8 24.6s15.9 8.7 24.6 5.8l88.8-29.6c8.2-2.7 15.7-7.4 21.9-13.5L437.7 172.3 339.7 74.3 172.4 241.7zM96 64C43 64 0 107 0 160V416c0 53 43 96 96 96H352c53 0 96-43 96-96V320c0-17.7-14.3-32-32-32s-32 14.3-32 32v96c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V160c0-17.7 14.3-32 32-32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H96z" />
+                                                        </svg></a>
+                                                    <a class="btn btn-danger" href="<?= site_url('galeri/delete/' . $item['id']) ?>" onclick="return confirm('Delete this photo?')"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                                            <path d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z" />
+                                                        </svg></a>
+                                                </td>
+                                            </tr>
+                                        <?php endforeach ?>
+                                    </tbody>
+
+                                </table>
                             </div>
                         </div>
                     </div>
@@ -248,24 +248,7 @@
     <!-- Page level custom scripts -->
     <script src="<?= base_url() ?>js/demo/datatables-demo.js"></script>
 
-    <!-- sweet alert 2 -->
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script>
-        <?php if (session()->getFlashdata('success')) : ?>
-            Swal.fire({
-                icon: 'success',
-                title: 'Success!',
-                text: '<?= session()->getFlashdata('success') ?>',
-            });
-        <?php endif ?>
-        <?php if (session()->getFlashdata('error')) : ?>
-            Swal.fire({
-                icon: 'error',
-                title: 'Error!',
-                text: '<?= session()->getFlashdata('error') ?>',
-            });
-        <?php endif ?>
-    </script>
+
 
 </body>
 

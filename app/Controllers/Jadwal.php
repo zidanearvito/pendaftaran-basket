@@ -22,11 +22,6 @@ class Jadwal extends BaseController
         return view('jadwalLatihan', $data);
     }
 
-    // public function create()
-    // {
-    //     return view('jadwal/create');
-    // }
-
     public function create()
     {
         $model = new JadwalModel();
@@ -34,7 +29,7 @@ class Jadwal extends BaseController
             // Validasi input, Anda dapat menggunakan CodeIgniter 4 validation jika diperlukan.
             $this->validate([
                 'judul' => 'required',
-                'foto' => 'uploaded[foto]|mime_in[foto,image/jpg,image/jpeg,image/png]|max_size[foto,1024]', // Contoh validasi untuk foto (maksimum 1MB)
+                'foto' => 'uploaded[foto]|mime_in[foto,image/jpg,image/jpeg,image/png]|max_size[foto,5120]', // Contoh validasi untuk foto (maksimum 1MB)
                 'deskripsi' => 'required',
             ]);
 
@@ -130,6 +125,6 @@ class Jadwal extends BaseController
         }
 
         $model->delete($id);
-        return redirect()->to('/jadwal')->with('success', 'Jadwal berhasil dihapus.');
+        return redirect()->to('admin/jadwal')->with('success', 'Schedule Deleted');
     }
 }

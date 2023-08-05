@@ -43,11 +43,11 @@
             <hr class="sidebar-divider my-0">
 
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item">
+            <!-- <li class="nav-item">
                 <a class="nav-link" href="<?= site_url('/admin') ?>">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
-            </li>
+            </li> -->
 
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
@@ -56,21 +56,35 @@
             <li class="nav-item">
                 <a class="nav-link" href="<?= site_url('/admin/data') ?>">
                     <i class="fas fa-fw fa-table"></i>
-                    <span>Data Pendaftar</span></a>
+                    <span>Registration</span></a>
             </li>
 
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
 
             <!-- Item jadwal -->
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                <i class="fas fa-fw fa-table"></i>
                     <span>Schedule</span></a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item" href="<?= site_url('/admin/jadwal/add') ?>">Add New Schedule</a>
                         <a class="collapse-item" href="<?= site_url('/admin/jadwal') ?>">Schedule</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Item galeri -->
+            <li class="nav-item">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Gallery</span></a>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="<?= site_url('/admin/galeri/add') ?>">Add New Photo</a>
+                        <a class="collapse-item" href="<?= site_url('/admin/galeri') ?>">Gallery</a>
                     </div>
                 </div>
             </li>
@@ -134,14 +148,14 @@
                     <!-- <p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below.
                         For more information about DataTables, please visit the <a target="_blank" href="https://datatables.net">official DataTables documentation</a>.</p> -->
                     <div class="card o-hidden border-0 shadow-lg my-5">
-                        <div class="card-body p-0">
+                        <div class="card-body p-5 vh-100">
                             <!-- Nested Row within Card Body -->
                             <h1 class="text-center"><?= $registrasi['kode_pendaftaran'] ?></h1>
                             <div class="row">
                                 <div class="col-5 text-center">
-                                    <img src="" alt="foto pendaftar" class="pb-3">
+                                    <img src="<?= base_url('uploads/' . $registrasi['foto']) ?>" style="max-width: 18rem;" alt="foto pendaftar" class="pb-3">
                                     <h1><?= $registrasi['nama_siswa'] ?></h1>
-                                    <p><?= $registrasi['umur'] ?></p>
+                                    <p><?= $registrasi['jurusan'] ?></p>
                                 </div>
                                 <div class="col-7">
                                     <p>NIS : <?= $registrasi['nis'] ?></p>
@@ -149,7 +163,7 @@
                                     <p>Agama : <?= $registrasi['agama'] ?></p>
                                     <p>Alamat : <?= $registrasi['alamat'] ?></p>
                                     <p>Kelas : <?= $registrasi['kelas'] ?></p>
-                                    <p>Jurusan : <?= $registrasi['jurusan'] ?></p>
+                                    <p>Umur : <?= $registrasi['umur'] ?></p>
                                     <p>Hobi : <?= $registrasi['hobi'] ?></p>
                                     <p>Tinggi Badan : <?= $registrasi['tinggi_badan'] ?></p>
                                     <p>Berat Badan : <?= $registrasi['berat_badan'] ?></p>
@@ -157,6 +171,10 @@
                                         <?= $registrasi['alasan_basket'] ?>
                                     </p>
                                 </div>
+                            </div>
+                            <div class="mt-5 text-center">
+                                <!-- sementara print -->
+                                <input class="btn btn-dark" value="Print" onclick="window.print()">
                             </div>
                         </div>
                     </div>

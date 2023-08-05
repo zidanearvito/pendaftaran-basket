@@ -63,7 +63,7 @@
             <hr class="sidebar-divider my-0">
 
             <!-- Item jadwal -->
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                 <i class="fas fa-fw fa-table"></i>
                     <span>Schedule</span></a>
@@ -76,7 +76,7 @@
             </li>
 
             <!-- Item galeri -->
-            <li class="nav-item">
+            <li class="nav-item active">
             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseOne"
                     aria-expanded="true" aria-controls="collapseOne">
                     <i class="fas fa-fw fa-table"></i>
@@ -157,22 +157,22 @@
                                             <div class="mb-3 row">
                                                 <label for="judul" class="col-sm-2 col-form-label">Schedule Name</label>
                                                 <div class="col-sm-10">
-                                                    <input type="text" class="form-control" name="judul" id="judul" value="<?= $jadwal['judul'] ?>">
+                                                    <input type="text" class="form-control" name="judul" id="judul" value="<?= $galeri['judul'] ?>">
                                                 </div>
                                             </div>
                                             <div class="mb-3 row">
                                                 <label for="foto" class="col-sm-2 col-form-label">Schedule Photo</label>
                                                 <div class="col-sm-10">
                                                     <input type="file" class="form-control" name="foto" id="foto">
-                                                    <?php if (!empty($jadwal['foto'])) : ?>
-                                                        <img src="<?= base_url('uploads/' . $jadwal['foto']) ?>" alt="Foto Jadwal" width="150">
+                                                    <?php if (!empty($galeri['foto'])) : ?>
+                                                        <img src="<?= base_url('uploads/gallery/' . $galeri['foto']) ?>" alt="Foto galeri" width="150">
                                                     <?php endif; ?>
                                                 </div>
                                             </div>
                                             <div class="mb-3 row">
                                                 <label for="deskripsi" class="col-sm-2 col-form-label">Description</label>
                                                 <div class="col-sm-10">
-                                                    <input type="text" class="form-control" name="deskripsi" id="deskripsi" value="<?= $jadwal['deskripsi'] ?>">
+                                                    <input type="text" class="form-control" name="deskripsi" id="deskripsi" value="<?= $galeri['deskripsi'] ?>">
                                                 </div>
                                             </div>
                                             <div class="text-center">

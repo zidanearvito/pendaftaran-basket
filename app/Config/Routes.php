@@ -59,14 +59,21 @@ $routes->group('admin', ['filter' => 'noauth'], function ($routes) {
 $routes->group('admin', ['filter' => 'auth'], function ($routes) {
     $routes->add('sukses', 'Admin\User::sukses');
 
-    $routes->add('dashboard', 'Registrasi::index');
+    // $routes->add('dashboard', 'Registrasi::index');
     $routes->add('data', 'Registrasi::data');
     $routes->add('detail/(:num)', 'Registrasi::detail/$1');
     $routes->add('delete/(:num)', 'Registrasi::delete/$1');
 
+    // jadwal routes
     $routes->add('jadwal', 'Jadwal::index');
     $routes->add('jadwal/add', 'Jadwal::create');
     $routes->add('jadwal/update(:num)', 'Jadwal::update/$1');
+
+    // Galeri routes
+    $routes->add('galeri', 'Galeri::index');
+    $routes->add('galeri/add', 'Galeri::create');
+    $routes->add('galeri/update(:num)', 'Galeri::update/$1');
+    $routes->add('galeri/delete(:num)', 'Galeri::delete/$1');
 });
 
 

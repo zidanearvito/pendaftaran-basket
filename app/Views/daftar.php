@@ -16,7 +16,7 @@
                 <div class="card-body bg-light">
 
                     <div class="container">
-                        <form id="contact-form" role="form" method="POST">
+                        <form id="contact-form" role="form" method="POST" enctype="multipart/form-data">
 
                             <div class="controls">
 
@@ -120,22 +120,23 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="form-group">
+                                            <label for="foto">foto</label>
+                                            <input type="file" class="form-control" name="foto" id="foto">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
                                             <label for="alamat">Alamat *</label>
                                             <textarea id="alamat" name="alamat" class="form-control" placeholder="Masukkan Alamat anda.." rows="4" required="required"></textarea>
                                         </div>
-
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group">
                                             <label for="alasan_basket">Alasan Basket *</label>
                                             <textarea id="alasan_basket" name="alasan_basket" class="form-control" placeholder="Masukkan Alasan anda ingin bergabung dengan ekskul basket.." rows="4" required="required"></textarea>
                                         </div>
-
                                     </div>
-
-
                                     <div class="col-md-12">
-
                                         <input type="submit" class="btn btn-warning btn-send pt-2 btn-block
                             " value="Daftar">
 

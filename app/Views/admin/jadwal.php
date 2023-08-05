@@ -43,11 +43,11 @@
             <hr class="sidebar-divider my-0">
 
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item">
+            <!-- <li class="nav-item">
                 <a class="nav-link" href="<?= site_url('/admin') ?>">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
-            </li>
+            </li> -->
 
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
@@ -56,7 +56,7 @@
             <li class="nav-item">
                 <a class="nav-link" href="<?= site_url('/admin/data') ?>">
                     <i class="fas fa-fw fa-table"></i>
-                    <span>Data Pendaftar</span></a>
+                    <span>Registration</span></a>
             </li>
 
             <!-- Divider -->
@@ -64,14 +64,26 @@
 
             <!-- Item jadwal -->
             <li class="nav-item active">
-            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
-                    aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-table"></i>
                     <span>Schedule</span></a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a class="collapse-item" href="<?= site_url('/admin/jadwal/add') ?>">Add New Schedule</a>
                         <a class="collapse-item" href="<?= site_url('/admin/jadwal') ?>">Schedule</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Item galeri -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Gallery</span></a>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="<?= site_url('/admin/galeri/add') ?>">Add New Photo</a>
+                        <a class="collapse-item" href="<?= site_url('/admin/galeri') ?>">Gallery</a>
                     </div>
                 </div>
             </li>
@@ -131,7 +143,7 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">Data Pendaftar</h1>
+                    <h1 class="h3 mb-2 text-gray-800">Schedule</h1>
                     <!-- <p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below.
                         For more information about DataTables, please visit the <a target="_blank" href="https://datatables.net">official DataTables documentation</a>.</p> -->
 
@@ -154,13 +166,15 @@
                                             <tr>
                                                 <td><?= $key + 1 ?></td>
                                                 <td><?= $item['judul'] ?></td>
-                                                <td><img src="<?= base_url() ?>/uploads/<?= $item['foto'] ?>" alt=""  width="100"></td>
+                                                <td><img src="<?= base_url() ?>/uploads/<?= $item['foto'] ?>" alt="" width="100"></td>
                                                 <td><?= $item['deskripsi'] ?></td>
                                                 <td width="10%">
                                                     <a class="btn btn-success" href="<?= site_url('jadwal/update/' . $item['id']) ?>"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
                                                             <path d="M471.6 21.7c-21.9-21.9-57.3-21.9-79.2 0L362.3 51.7l97.9 97.9 30.1-30.1c21.9-21.9 21.9-57.3 0-79.2L471.6 21.7zm-299.2 220c-6.1 6.1-10.8 13.6-13.5 21.9l-29.6 88.8c-2.9 8.6-.6 18.1 5.8 24.6s15.9 8.7 24.6 5.8l88.8-29.6c8.2-2.7 15.7-7.4 21.9-13.5L437.7 172.3 339.7 74.3 172.4 241.7zM96 64C43 64 0 107 0 160V416c0 53 43 96 96 96H352c53 0 96-43 96-96V320c0-17.7-14.3-32-32-32s-32 14.3-32 32v96c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V160c0-17.7 14.3-32 32-32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H96z" />
                                                         </svg></a>
-                                                   
+                                                    <a class="btn btn-danger" href="<?= site_url('jadwal/delete/' . $item['id']) ?>" onclick="return confirm('Delete this photo?')"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                                            <path d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z" />
+                                                        </svg></a>
                                                 </td>
                                             </tr>
                                         <?php endforeach ?>
@@ -234,7 +248,7 @@
     <!-- Page level custom scripts -->
     <script src="<?= base_url() ?>js/demo/datatables-demo.js"></script>
 
-    
+
 
 </body>
 

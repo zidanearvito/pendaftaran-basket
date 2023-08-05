@@ -12,6 +12,6 @@ class RegistrasiModel extends Model
     protected $allowedFields = [
         'nis', 'nama_siswa', 'jenis_kelamin', 'umur', 'agama',
         'alamat', 'kelas', 'jurusan', 'hobi', 'tinggi_badan', 'berat_badan',
-        'alasan_basket', 'kode_pendaftaran'
+        'alasan_basket', 'kode_pendaftaran', 'foto'
     ];
 }

@@ -41,7 +41,7 @@
         <div class="row g-5 align-items-end mb-5">
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="border-start border-5 border-primary ps-4">
-                    <h1 class="display-6 mb-0">Our Achievment</h1>
+                    <h1 class="display-6 mb-0">Gallery</h1>
                 </div>
             </div>
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
@@ -53,33 +53,17 @@
             </div>
         </div>
         <div class="row g-4">
+            <?php foreach ($galeri as $item) : ?>
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="team-item position-relative">
-                    <img class="img-fluid" src="img/team-1.jpg" alt="" />
+                    <img class="img-fluid" src="<?= base_url() ?>/uploads/gallery/<?= $item['foto'] ?>" alt="" style="width: 25rem; height:15rem"/>
                     <div class="team-text bg-white p-4">
-                        <h5>Full Name</h5>
-                        <span>Engineer</span>
+                        <h5><?= $item ['judul'] ?></h5>
+                        <span><?= $item ['deskripsi'] ?></span>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="team-item position-relative">
-                    <img class="img-fluid" src="img/team-2.jpg" alt="" />
-                    <div class="team-text bg-white p-4">
-                        <h5>Full Name</h5>
-                        <span>Engineer</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="team-item position-relative">
-                    <img class="img-fluid" src="img/team-3.jpg" alt="" />
-                    <div class="team-text bg-white p-4">
-                        <h5>Full Name</h5>
-                        <span>Engineer</span>
-                    </div>
-                </div>
-            </div>
+            <?php endforeach ?>
         </div>
     </div>
 </div>

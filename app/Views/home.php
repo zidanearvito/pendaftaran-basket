@@ -18,17 +18,7 @@
                                 <h1 class="display-2 text-light mb-3 animated slideInDown">
                                     Nusantara Basketball
                                 </h1>
-                                <ol class="breadcrumb mb-4 pb-2">
-                                    <li class="breadcrumb-item fs-5 text-light">
-                                        Commercial
-                                    </li>
-                                    <li class="breadcrumb-item fs-5 text-light">
-                                        Residential
-                                    </li>
-                                    <li class="breadcrumb-item fs-5 text-light">
-                                        Industrial
-                                    </li>
-                                </ol>
+                                
                                 <a href="<?= base_url('daftar') ?>" class="btn btn-primary py-3 px-5">Register</a>
                             </div>
                         </div>
@@ -47,17 +37,7 @@
                                 <h1 class="display-2 text-light mb-3 animated slideInDown">
                                     Nusantara Basketball
                                 </h1>
-                                <ol class="breadcrumb mb-4 pb-2">
-                                    <li class="breadcrumb-item fs-5 text-light">
-                                        Commercial
-                                    </li>
-                                    <li class="breadcrumb-item fs-5 text-light">
-                                        Residential
-                                    </li>
-                                    <li class="breadcrumb-item fs-5 text-light">
-                                        Industrial
-                                    </li>
-                                </ol>
+                               
                                 <a href="" class="btn btn-primary py-3 px-5">More Details</a>
                             </div>
                         </div>
@@ -83,7 +63,7 @@
         <div class="row g-5">
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="position-relative overflow-hidden ps-5 h-100" style="min-height: 400px">
-                    <img class="position-absolute w-100 h-100" src="img/about.jpg" alt="" style="object-fit: cover" />
+                    <img class="position-absolute w-100 h-100" src="<?php base_url() ?>/img/IMG_1806.jpg" alt="" style="object-fit: cover" />
 
                 </div>
             </div>
@@ -95,7 +75,7 @@
                             Captain
                         </h1>
                     </div>
-                    <p>
+                    <!-- <p>
                         Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
                         Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit,
                         sed stet lorem sit clita duo justo magna dolore erat amet
@@ -104,7 +84,7 @@
                         Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
                         Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit,
                         sed stet lorem sit clita duo justo magna dolore erat amet
-                    </p>
+                    </p> -->
                 </div>
             </div>
         </div>
@@ -120,11 +100,11 @@
                 <img class="img-fluid w-100" src="<?= base_url() ?>/img/IMG_1806.jpg" alt="" />
                 <div class="facts-overlay">
                     <h1 class="display-1">01</h1>
-                    <h4 class="text-white mb-3">Construction</h4>
+                    <!-- <h4 class="text-white mb-3">Construction</h4>
                     <p class="text-white">
                         Aliqu diam amet diam et eos erat ipsum lorem stet lorem sit
                         clita duo justo erat amet
-                    </p>
+                    </p> -->
                 </div>
             </div>
         </div>
@@ -133,11 +113,11 @@
                 <img class="img-fluid w-100" src="<?= base_url() ?>/img/IMG_1806.jpg" alt="" />
                 <div class="facts-overlay">
                     <h1 class="display-1">02</h1>
-                    <h4 class="text-white mb-3">Mechanical</h4>
+                    <!-- <h4 class="text-white mb-3">Mechanical</h4>
                     <p class="text-white">
                         Aliqu diam amet diam et eos erat ipsum lorem stet lorem sit
                         clita duo justo erat amet
-                    </p>
+                    </p> -->
                 </div>
             </div>
         </div>
@@ -146,11 +126,11 @@
                 <img class="img-fluid w-100" src="<?= base_url() ?>/img/IMG_1806.jpg" alt="" />
                 <div class="facts-overlay">
                     <h1 class="display-1">03</h1>
-                    <h4 class="text-white mb-3">Architecture</h4>
+                    <!-- <h4 class="text-white mb-3">Architecture</h4>
                     <p class="text-white">
                         Aliqu diam amet diam et eos erat ipsum lorem stet lorem sit
                         clita duo justo erat amet
-                    </p>
+                    </p> -->
                 </div>
             </div>
         </div>
@@ -159,11 +139,11 @@
                 <img class="img-fluid w-100" src="<?= base_url() ?>/img/IMG_1806.jpg" alt="" />
                 <div class="facts-overlay">
                     <h1 class="display-1">04</h1>
-                    <h4 class="text-white mb-3">Interior Design</h4>
+                    <!-- <h4 class="text-white mb-3">Interior Design</h4>
                     <p class="text-white">
                         Aliqu diam amet diam et eos erat ipsum lorem stet lorem sit
                         clita duo justo erat amet
-                    </p>
+                    </p> -->
                 </div>
             </div>
         </div>

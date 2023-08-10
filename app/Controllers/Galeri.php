@@ -18,7 +18,7 @@ class Galeri extends BaseController
     // {
     //     $model = new GaleriModel();
     //     $data['galeri'] = $model->findAll();
-    //     return view('galeri', $data);
+    //     return view('tentangKami', $data);
     // }
 
     public function create()

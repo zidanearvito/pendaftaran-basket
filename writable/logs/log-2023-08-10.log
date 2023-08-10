@@ -1,0 +1,158 @@
+CRITICAL - 2023-08-10 08:17:06 --> syntax error, unexpected 'endforeach' (T_ENDFOREACH), expecting end of file
+in APPPATH\Views\TentangKami.php on line 66.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('TentangKami', [], true)
+ 3 APPPATH\Controllers\Home.php(23): view('TentangKami')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->tentang()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\kuliah\\kkp\\pendaftaran-basket\\public\\index.php')
+CRITICAL - 2023-08-10 08:17:26 --> Undefined variable: galeri
+in APPPATH\Views\TentangKami.php on line 56.
+ 1 APPPATH\Views\TentangKami.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: galeri', 'E:\\kuliah\\kkp\\pendaftaran-basket\\app\\Views\\TentangKami.php', 56, [])
+ 2 SYSTEMPATH\View\View.php(224): include('E:\\kuliah\\kkp\\pendaftaran-basket\\app\\Views\\TentangKami.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('TentangKami', [], true)
+ 5 APPPATH\Controllers\Home.php(23): view('TentangKami')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->tentang()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\kuliah\\kkp\\pendaftaran-basket\\public\\index.php')
+CRITICAL - 2023-08-10 08:18:01 --> Undefined variable: galeri
+in APPPATH\Views\TentangKami.php on line 56.
+ 1 APPPATH\Views\TentangKami.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: galeri', 'E:\\kuliah\\kkp\\pendaftaran-basket\\app\\Views\\TentangKami.php', 56, [])
+ 2 SYSTEMPATH\View\View.php(224): include('E:\\kuliah\\kkp\\pendaftaran-basket\\app\\Views\\TentangKami.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('TentangKami', [], true)
+ 5 APPPATH\Controllers\Home.php(23): view('TentangKami')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->tentang()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\kuliah\\kkp\\pendaftaran-basket\\public\\index.php')
+CRITICAL - 2023-08-10 08:18:15 --> Undefined variable: galeri
+in APPPATH\Views\TentangKami.php on line 56.
+ 1 APPPATH\Views\TentangKami.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: galeri', 'E:\\kuliah\\kkp\\pendaftaran-basket\\app\\Views\\TentangKami.php', 56, [])
+ 2 SYSTEMPATH\View\View.php(224): include('E:\\kuliah\\kkp\\pendaftaran-basket\\app\\Views\\TentangKami.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('TentangKami', [], true)
+ 5 APPPATH\Controllers\Home.php(23): view('TentangKami')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->tentang()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\kuliah\\kkp\\pendaftaran-basket\\public\\index.php')
+CRITICAL - 2023-08-10 08:18:15 --> Undefined variable: galeri
+in APPPATH\Views\TentangKami.php on line 56.
+ 1 APPPATH\Views\TentangKami.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: galeri', 'E:\\kuliah\\kkp\\pendaftaran-basket\\app\\Views\\TentangKami.php', 56, [])
+ 2 SYSTEMPATH\View\View.php(224): include('E:\\kuliah\\kkp\\pendaftaran-basket\\app\\Views\\TentangKami.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('TentangKami', [], true)
+ 5 APPPATH\Controllers\Home.php(23): view('TentangKami')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->tentang()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\kuliah\\kkp\\pendaftaran-basket\\public\\index.php')
+CRITICAL - 2023-08-10 08:18:19 --> Undefined variable: galeri
+in APPPATH\Views\TentangKami.php on line 56.
+ 1 APPPATH\Views\TentangKami.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: galeri', 'E:\\kuliah\\kkp\\pendaftaran-basket\\app\\Views\\TentangKami.php', 56, [])
+ 2 SYSTEMPATH\View\View.php(224): include('E:\\kuliah\\kkp\\pendaftaran-basket\\app\\Views\\TentangKami.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('TentangKami', [], true)
+ 5 APPPATH\Controllers\Home.php(23): view('TentangKami')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->tentang()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\kuliah\\kkp\\pendaftaran-basket\\public\\index.php')
+CRITICAL - 2023-08-10 08:21:02 --> Undefined variable: galeri
+in APPPATH\Views\TentangKami.php on line 56.
+ 1 APPPATH\Views\TentangKami.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: galeri', 'E:\\kuliah\\kkp\\pendaftaran-basket\\app\\Views\\TentangKami.php', 56, [])
+ 2 SYSTEMPATH\View\View.php(224): include('E:\\kuliah\\kkp\\pendaftaran-basket\\app\\Views\\TentangKami.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('TentangKami', [], true)
+ 5 APPPATH\Controllers\Home.php(23): view('TentangKami')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->tentang()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\kuliah\\kkp\\pendaftaran-basket\\public\\index.php')
+INFO - 2023-08-10 08:21:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-08-10 08:21:12 --> Undefined variable: galeri
+in APPPATH\Views\TentangKami.php on line 56.
+ 1 APPPATH\Views\TentangKami.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: galeri', 'E:\\kuliah\\kkp\\pendaftaran-basket\\app\\Views\\TentangKami.php', 56, [])
+ 2 SYSTEMPATH\View\View.php(224): include('E:\\kuliah\\kkp\\pendaftaran-basket\\app\\Views\\TentangKami.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('TentangKami', [], true)
+ 5 APPPATH\Controllers\Home.php(23): view('TentangKami')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->tentang()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\kuliah\\kkp\\pendaftaran-basket\\public\\index.php')
+CRITICAL - 2023-08-10 08:23:40 --> Undefined variable: galeri
+in APPPATH\Views\TentangKami.php on line 56.
+ 1 APPPATH\Views\TentangKami.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: galeri', 'E:\\kuliah\\kkp\\pendaftaran-basket\\app\\Views\\TentangKami.php', 56, [])
+ 2 SYSTEMPATH\View\View.php(224): include('E:\\kuliah\\kkp\\pendaftaran-basket\\app\\Views\\TentangKami.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('TentangKami', [], true)
+ 5 APPPATH\Controllers\Home.php(23): view('TentangKami')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->tentang()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\kuliah\\kkp\\pendaftaran-basket\\public\\index.php')
+CRITICAL - 2023-08-10 08:24:17 --> Undefined variable: galeri
+in APPPATH\Views\TentangKami.php on line 56.
+ 1 APPPATH\Views\TentangKami.php(56): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: galeri', 'E:\\kuliah\\kkp\\pendaftaran-basket\\app\\Views\\TentangKami.php', 56, [])
+ 2 SYSTEMPATH\View\View.php(224): include('E:\\kuliah\\kkp\\pendaftaran-basket\\app\\Views\\TentangKami.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('TentangKami', [], true)
+ 5 APPPATH\Controllers\Home.php(23): view('TentangKami')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->tentang()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\kuliah\\kkp\\pendaftaran-basket\\public\\index.php')
+INFO - 2023-08-10 08:26:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-10 08:33:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-10 08:33:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-10 08:33:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-10 08:33:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-10 08:33:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-10 08:33:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-10 08:33:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-10 08:34:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-10 08:34:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-10 08:34:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-10 08:34:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-10 08:34:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-10 08:34:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-10 08:34:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-10 08:34:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-10 08:34:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-10 08:34:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-10 08:34:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-10 08:34:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-10 08:34:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-10 08:34:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-10 08:35:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-10 08:35:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-10 08:35:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-10 08:35:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-10 08:35:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-10 08:35:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-10 08:39:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-10 08:41:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-10 08:41:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-10 08:41:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-10 08:41:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-10 08:42:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-10 08:42:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-10 08:42:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-10 08:42:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-10 08:42:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-08-10 08:42:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Models\JadwalModel;
+use App\Models\GaleriModel;
 use App\Controllers\BaseController;
 class Home extends BaseController
 {
@@ -20,7 +21,9 @@ class Home extends BaseController
 
     public function tentang()
     {
-        return view('TentangKami');
+        $model = new GaleriModel();
+        $data['galeri'] = $model->findAll();
+        return view('TentangKami', $data);
     }
 
 }

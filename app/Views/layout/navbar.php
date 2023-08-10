@@ -8,10 +8,10 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav ms-auto py-3 py-lg-0">
-            <a href="<?= base_url() ?>" class="nav-item nav-link">Home</a>
-            <a href="<?= base_url('jadwal') ?>" class="nav-item nav-link">Schedule</a>
-            <a href="<?= base_url('tentang-kami') ?>" class="nav-item nav-link">About Us</a>
-            <a href="<?= base_url('daftar') ?>" class="nav-item nav-link">Register</a>
+            <a href="<?= base_url() ?>" class="nav-item nav-link">Beranda</a>
+            <a href="<?= base_url('jadwal') ?>" class="nav-item nav-link">Jadwal</a>
+            <a href="<?= base_url('tentang-kami') ?>" class="nav-item nav-link">Tentang Kami</a>
+            <a href="<?= base_url('daftar') ?>" class="nav-item nav-link">Daftar</a>
         </div>
     </div>
 </nav>

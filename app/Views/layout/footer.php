@@ -25,10 +25,10 @@
         </div> -->
         <div class="col-md-4">
           <h4 class="text-light mb-4">Quick Links</h4>
-          <a class="btn btn-link" href="<?= base_url() ?>">Home</a>
-          <a class="btn btn-link" href="<?= base_url('jadwal') ?>">Schedule</a>
-          <a class="btn btn-link" href="<?= base_url('tentang-kami') ?>">About Us</a>
-          <a class="btn btn-link" href="<?= base_url('daftar') ?>">Register</a>
+          <a class="btn btn-link" href="<?= base_url() ?>">Beranda</a>
+          <a class="btn btn-link" href="<?= base_url('jadwal') ?>">Jadwal</a>
+          <a class="btn btn-link" href="<?= base_url('tentang-kami') ?>">Tentang Kami</a>
+          <a class="btn btn-link" href="<?= base_url('daftar') ?>">Daftar</a>
         </div>
         <div class="col-md-4">
           <h4 class="text-light mb-4">Social Media</h4>

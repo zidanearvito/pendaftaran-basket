@@ -18,8 +18,8 @@
                                 <h1 class="display-2 text-light mb-3 animated slideInDown">
                                     Nusantara Basketball
                                 </h1>
-                                
-                                <a href="<?= base_url('daftar') ?>" class="btn btn-primary py-3 px-5">Register</a>
+
+                                <a href="<?= base_url('daftar') ?>" class="btn btn-primary py-3 px-5">Daftar</a>
                             </div>
                         </div>
                     </div>
@@ -37,7 +37,7 @@
                                 <h1 class="display-2 text-light mb-3 animated slideInDown">
                                     Nusantara Basketball
                                 </h1>
-                               
+
                                 <a href="" class="btn btn-primary py-3 px-5">More Details</a>
                             </div>
                         </div>
@@ -63,28 +63,19 @@
         <div class="row g-5">
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="position-relative overflow-hidden ps-5 h-100" style="min-height: 400px">
-                    <img class="position-absolute w-100 h-100" src="<?php base_url() ?>/img/IMG_1806.jpg" alt="" style="object-fit: cover" />
+                    <img class="position-absolute w-100 h-100" src="<?php base_url() ?>/img/kapten.jpg" alt="" style="object-fit: cover" />
 
                 </div>
             </div>
             <div class="col-lg-6 wow fadeInUp " data-wow-delay="0.5s">
                 <div class="h-100">
                     <div class="border-start border-5 border-primary ps-4 mb-5">
-                        <h6 class="text-body text-uppercase mb-2">Captain</h6>
+                        <h6 class="text-body text-uppercase mb-2">Kapten</h6>
                         <h1 class="display-6 mb-0">
-                            Captain
+                            Leanna Narasnama
                         </h1>
                     </div>
-                    <!-- <p>
-                        Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
-                        Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit,
-                        sed stet lorem sit clita duo justo magna dolore erat amet
-                    </p>
-                    <p class="mb-4">
-                        Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
-                        Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit,
-                        sed stet lorem sit clita duo justo magna dolore erat amet
-                    </p> -->
+                    “All the successful teams I’ve ever seen have three characteristics: They play unselfish, they play together, and they play hard.“
                 </div>
             </div>
         </div>
@@ -97,53 +88,37 @@
     <div class="row g-0">
         <div class="col-xl-3 col-sm-6 wow fadeIn" data-wow-delay="0.1s">
             <div class="position-relative">
-                <img class="img-fluid w-100" src="<?= base_url() ?>/img/IMG_1806.jpg" alt="" />
+                <img class="img-fluid w-100" src="<?= base_url() ?>/img/1.jpg" alt="" style="height: 38rem;" />
                 <div class="facts-overlay">
-                    <h1 class="display-1">01</h1>
-                    <!-- <h4 class="text-white mb-3">Construction</h4>
-                    <p class="text-white">
-                        Aliqu diam amet diam et eos erat ipsum lorem stet lorem sit
-                        clita duo justo erat amet
-                    </p> -->
+                    <h1 class="display-1"></h1>
+
                 </div>
             </div>
         </div>
         <div class="col-xl-3 col-sm-6 wow fadeIn" data-wow-delay="0.3s">
             <div class="position-relative">
-                <img class="img-fluid w-100" src="<?= base_url() ?>/img/IMG_1806.jpg" alt="" />
+                <img class="img-fluid w-100" src="<?= base_url() ?>/img/2.jpg" alt="" style="height: 38rem;" />
                 <div class="facts-overlay">
-                    <h1 class="display-1">02</h1>
-                    <!-- <h4 class="text-white mb-3">Mechanical</h4>
-                    <p class="text-white">
-                        Aliqu diam amet diam et eos erat ipsum lorem stet lorem sit
-                        clita duo justo erat amet
-                    </p> -->
+                    <h1 class="display-1"></h1>
+
                 </div>
             </div>
         </div>
         <div class="col-xl-3 col-sm-6 wow fadeIn" data-wow-delay="0.5s">
             <div class="position-relative">
-                <img class="img-fluid w-100" src="<?= base_url() ?>/img/IMG_1806.jpg" alt="" />
+                <img class="img-fluid w-100" src="<?= base_url() ?>/img/3s.jpg" alt="" style="height: 38rem;" />
                 <div class="facts-overlay">
-                    <h1 class="display-1">03</h1>
-                    <!-- <h4 class="text-white mb-3">Architecture</h4>
-                    <p class="text-white">
-                        Aliqu diam amet diam et eos erat ipsum lorem stet lorem sit
-                        clita duo justo erat amet
-                    </p> -->
+                    <h1 class="display-1"></h1>
+
                 </div>
             </div>
         </div>
         <div class="col-xl-3 col-sm-6 wow fadeIn" data-wow-delay="0.7s">
             <div class="position-relative">
-                <img class="img-fluid w-100" src="<?= base_url() ?>/img/IMG_1806.jpg" alt="" />
+                <img class="img-fluid w-100" src="<?= base_url() ?>/img/4s.jpg" alt="" style="height: 38rem;" />
                 <div class="facts-overlay">
-                    <h1 class="display-1">04</h1>
-                    <!-- <h4 class="text-white mb-3">Interior Design</h4>
-                    <p class="text-white">
-                        Aliqu diam amet diam et eos erat ipsum lorem stet lorem sit
-                        clita duo justo erat amet
-                    </p> -->
+                    <h1 class="display-1"></h1>
+
                 </div>
             </div>
         </div>
@@ -157,46 +132,15 @@
         <div class="row g-5">
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="border-start border-5 border-primary ps-4 mb-5">
-                    <!-- <h6 class="text-body text-uppercase mb-2">Why Choose Us!</h6> -->
+                    <h6 class="text-body text-uppercase mb-2">Pelatih</h6>
                     <h1 class="display-6 mb-0">
                         RIYO ANDHIKA
                     </h1>
                 </div>
                 <p class="mb-5">
-                    Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
-                    diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet
-                    lorem sit clita duo justo magna dolore erat amet
+                    “You can’t stop people from trying to limit your dreams, but you can stop it from becoming a reality. Your dreams are up to you. I encourage you to always be curious, always seek out things you love and always work hard once you find it.”
                 </p>
-                <div class="row gy-5 gx-4">
-                    <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
-                        <div class="d-flex align-items-center mb-3">
-                            <i class="fa fa-check fa-2x text-primary flex-shrink-0 me-3"></i>
-                            <h6 class="mb-0">Large number of services provided</h6>
-                        </div>
-                        <span>Magna sea eos sit dolor, ipsum amet ipsum lorem diam</span>
-                    </div>
-                    <div class="col-sm-6 wow fadeIn" data-wow-delay="0.2s">
-                        <div class="d-flex align-items-center mb-3">
-                            <i class="fa fa-check fa-2x text-primary flex-shrink-0 me-3"></i>
-                            <h6 class="mb-0">25+ years of professional experience</h6>
-                        </div>
-                        <span>Magna sea eos sit dolor, ipsum amet ipsum lorem diam</span>
-                    </div>
-                    <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
-                        <div class="d-flex align-items-center mb-3">
-                            <i class="fa fa-check fa-2x text-primary flex-shrink-0 me-3"></i>
-                            <h6 class="mb-0">A large number of grateful customers</h6>
-                        </div>
-                        <span>Magna sea eos sit dolor, ipsum amet ipsum lorem diam</span>
-                    </div>
-                    <div class="col-sm-6 wow fadeIn" data-wow-delay="0.4s">
-                        <div class="d-flex align-items-center mb-3">
-                            <i class="fa fa-check fa-2x text-primary flex-shrink-0 me-3"></i>
-                            <h6 class="mb-0">Always reliable and affordable prices</h6>
-                        </div>
-                        <span>Magna sea eos sit dolor, ipsum amet ipsum lorem diam</span>
-                    </div>
-                </div>
+                
             </div>
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                 <div class="position-relative overflow-hidden ps-5 pt-5 h-100" style="min-height: 400px">

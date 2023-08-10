@@ -6,7 +6,7 @@
 <div class="container pt-3 pb-5">
     <div class="wow fadeInUp py-4" data-wow-delay="0.1s">
         <div class="border-start border-5 border-primary ps-4">
-            <h1 class="display-6 mb-0">Register</h1>
+            <h1 class="display-6 mb-0">Daftar</h1>
         </div>
     </div>
 

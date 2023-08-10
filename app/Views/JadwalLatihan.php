@@ -6,7 +6,7 @@
     <div class="row">
         <div class="wow fadeInUp py-4" data-wow-delay="0.1s">
             <div class="border-start border-5 border-primary ps-4">
-                <h1 class="display-6 mb-0">Schedule</h1>
+                <h1 class="display-6 mb-0">Jadwal</h1>
             </div>
         </div>
         <div class="col-lg-12">

@@ -9,11 +9,11 @@ use App\Models\RegistrasiModel;
 class Registrasi extends BaseController
 {
     // tadinya buat dashboard
-    // public function index()
-    // {
+    public function index()
+    {
 
-    //     return view('admin/index');
-    // }
+        return view('admin/index');
+    }
 
     public function data()
     {
@@ -78,7 +78,7 @@ class Registrasi extends BaseController
                 'kode_pendaftaran' => $kode,
             ]);
 
-            session()->setFlashdata('success', 'Register Success');
+            session()->setFlashdata('success', 'Daftar Sukses. Berikut adalah Kode pendaftaran anda. Silahkan Di Screenshoot :' . $kode);
             // Kembali ke halaman daftar jadwal atau halaman lainnya jika diperlukan.
             return redirect()->to(base_url('/daftar'));
         }
@@ -188,6 +188,10 @@ class Registrasi extends BaseController
     {
         $model = new RegistrasiModel();
         $model->delete($id);
+
         return redirect()->to('/admin/data');
+
     }
+    
 }
+

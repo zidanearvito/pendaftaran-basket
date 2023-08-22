@@ -9,13 +9,13 @@
                 <h1 class="display-6 mb-0">Jadwal</h1>
             </div>
         </div>
-        <div class="col-lg-12">
+        <div class="col-lg-12 text-center">
             <?php foreach ($jadwal as $item) : ?>
                 <div class="d-flex justify-content-between">
                     <p class="card-text"> </p>
                     <p class="card-text small">updated at : <?= $item['created_at'] ?> </p>
                 </div>
-                <img src="<?= base_url('uploads/' . $item['foto']) ?>" alt="Foto Jadwal" width="1200px" class="pt-3">
+                <img src="<?= base_url('uploads/' . $item['foto']) ?>" alt="Foto Jadwal" width="400px" class="pt-3">
                 <div class="card-body offset-2">
                     <hr style="width: 800px;">
                     <h2 class="card-title m-0"> <?= $item['judul'] ?> </h2>

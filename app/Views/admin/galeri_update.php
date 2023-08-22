@@ -43,11 +43,11 @@
             <hr class="sidebar-divider my-0">
 
             <!-- Nav Item - Dashboard -->
-            <!-- <li class="nav-item">
+            <li class="nav-item">
                 <a class="nav-link" href="<?= site_url('/admin') ?>">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
-            </li> -->
+            </li>
 
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
@@ -155,13 +155,13 @@
                                     <div class="p-5">
                                         <form method="POST" enctype="multipart/form-data" action="">
                                             <div class="mb-3 row">
-                                                <label for="judul" class="col-sm-2 col-form-label">Schedule Name</label>
+                                                <label for="judul" class="col-sm-2 col-form-label">Photo's Name</label>
                                                 <div class="col-sm-10">
                                                     <input type="text" class="form-control" name="judul" id="judul" value="<?= $galeri['judul'] ?>">
                                                 </div>
                                             </div>
                                             <div class="mb-3 row">
-                                                <label for="foto" class="col-sm-2 col-form-label">Schedule Photo</label>
+                                                <label for="foto" class="col-sm-2 col-form-label">Photo</label>
                                                 <div class="col-sm-10">
                                                     <input type="file" class="form-control" name="foto" id="foto">
                                                     <?php if (!empty($galeri['foto'])) : ?>

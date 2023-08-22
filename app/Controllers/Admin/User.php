@@ -61,7 +61,7 @@ class User extends BaseController
 
     function sukses()
     {
-        return redirect()->to('admin/data');
+        return redirect()->to('admin/dashboard');
     }
 
     function logout()

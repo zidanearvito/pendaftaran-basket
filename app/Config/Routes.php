@@ -59,7 +59,7 @@ $routes->group('admin', ['filter' => 'noauth'], function ($routes) {
 $routes->group('admin', ['filter' => 'auth'], function ($routes) {
     $routes->add('sukses', 'Admin\User::sukses');
 
-    // $routes->add('dashboard', 'Registrasi::index');
+    $routes->add('dashboard', 'Admin\Dashboard::index');
     $routes->add('data', 'Registrasi::data');
     $routes->add('detail/(:num)', 'Registrasi::detail/$1');
     $routes->add('delete/(:num)', 'Registrasi::delete/$1');

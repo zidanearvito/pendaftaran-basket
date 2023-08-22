@@ -13,9 +13,7 @@
 
     <!-- Custom fonts for this template-->
     <link href="<?= base_url() ?>vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link
-        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
     <!-- Custom styles for this template-->
     <link href="<?= base_url() ?>css/sb-admin-2.min.css" rel="stylesheet">
@@ -35,58 +33,43 @@
                     <div class="card-body p-0">
                         <!-- Nested Row within Card Body -->
                         <div class="row">
-                            <div class="col-lg-6 d-none d-lg-block bg-login-image"></div>
+                            <div class="col-lg-6 text-center">
+                                <img src="<?= base_url() ?>/img/nusan.png" style="width: 30rem; padding:1rem;" alt="">
+                            </div>
                             <div class="col-lg-6">
                                 <div class="p-5">
                                     <div class="text-center">
-                                        <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
+                                        <h1 class="h4 text-gray-900 mb-4">Login Admin</h1>
                                     </div>
                                     <?php
                                     $session = \Config\Services::session();
-                                    if($session->getFlashdata('warning')) {
+                                    if ($session->getFlashdata('warning')) {
                                     ?>
                                         <div class="alert alert-warning">
                                             <ul>
                                                 <?php
-                                                foreach($session->getFlashdata('warning') as $val) {
+                                                foreach ($session->getFlashdata('warning') as $val) {
                                                 ?>
                                                     <li><?= $val ?></li>
-                                                <?php    
+                                                <?php
                                                 }
                                                 ?>
                                             </ul>
                                         </div>
-                                    <?php    
+                                    <?php
                                     }
                                     ?>
                                     <form method="post" action="">
                                         <div class="form-group">
-                                            <input type="text" class="form-control form-control-user"
-                                                id="username" name="username"
-                                                placeholder="Username" value="<?php if($session->getFlashdata('username')) echo $session->getFlashdata('username') ?>">
+                                            <input type="text" class="form-control form-control-user" id="username" name="username" placeholder="email" value="<?php if ($session->getFlashdata('username')) echo $session->getFlashdata('username') ?>">
                                         </div>
                                         <div class="form-group">
-                                            <input type="password" class="form-control form-control-user"
-                                                id="password" name="password" placeholder="Password">
+                                            <input type="password" class="form-control form-control-user" id="password" name="password" placeholder="Password">
                                         </div>
-                                        
-                                        <input class="btn btn-primary btn-user btn-block" type="submit" name="submit" value="LOGIN"/>
-                                            
-                                        <hr>
-                                        <a href="index.html" class="btn btn-google btn-user btn-block">
-                                            <i class="fab fa-google fa-fw"></i> Login with Google
-                                        </a>
-                                        <a href="index.html" class="btn btn-facebook btn-user btn-block">
-                                            <i class="fab fa-facebook-f fa-fw"></i> Login with Facebook
-                                        </a>
+
+                                        <input class="btn btn-primary btn-user btn-block" type="submit" name="submit" value="LOGIN" />
+                                    
                                     </form>
-                                    <hr>
-                                    <div class="text-center">
-                                        <a class="small" href="forgot-password.html">Forgot Password?</a>
-                                    </div>
-                                    <div class="text-center">
-                                        <a class="small" href="register.html">Create an Account!</a>
-                                    </div>
                                 </div>
                             </div>
                         </div>

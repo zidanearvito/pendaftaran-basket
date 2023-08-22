@@ -139,7 +139,6 @@
                                     <div class="col-md-12">
                                         <input type="submit" class="btn btn-warning btn-send pt-2 btn-block
                             " value="Daftar">
-
                                     </div>
 
                                 </div>

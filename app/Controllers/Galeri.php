@@ -50,7 +50,7 @@ class Galeri extends BaseController
 
             session()->setFlashdata('success', 'Photo added to Gallery');
 
-            return redirect()->to(base_url('admin/galeri'));
+            return redirect()->to(base_url('admin/galeri/add'));
         }
         return view('admin/galeri_add');
     }
@@ -76,7 +76,7 @@ class Galeri extends BaseController
             $foto = $this->request->getFile('foto');
             if ($foto->isValid() && !$foto->hasMoved()) {
                 $newName = $foto->getRandomName();
-                $foto->move('./uploads', $newName);
+                $foto->move('./uploads/gallery', $newName);
 
                 // Hapus foto lama (kalo ada)
                 if (!empty($data['galeri']['foto']) && file_exists('./uploads/'.$data['galeri']['foto'])) {
